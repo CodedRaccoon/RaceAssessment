@@ -37,6 +37,9 @@
             this.pb2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblJeff = new System.Windows.Forms.Label();
+            this.lblArnald = new System.Windows.Forms.Label();
+            this.lblJoel = new System.Windows.Forms.Label();
             this.lblWinner = new System.Windows.Forms.Label();
             this.btnMax = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,9 +53,6 @@
             this.btnPunter1 = new System.Windows.Forms.RadioButton();
             this.btnBet = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblJoel = new System.Windows.Forms.Label();
-            this.lblArnald = new System.Windows.Forms.Label();
-            this.lblJeff = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb4)).BeginInit();
@@ -172,6 +172,30 @@
             this.panel2.Size = new System.Drawing.Size(983, 84);
             this.panel2.TabIndex = 8;
             // 
+            // lblJeff
+            // 
+            this.lblJeff.BackColor = System.Drawing.Color.White;
+            this.lblJeff.Location = new System.Drawing.Point(607, 59);
+            this.lblJeff.Name = "lblJeff";
+            this.lblJeff.Size = new System.Drawing.Size(214, 15);
+            this.lblJeff.TabIndex = 16;
+            // 
+            // lblArnald
+            // 
+            this.lblArnald.BackColor = System.Drawing.Color.White;
+            this.lblArnald.Location = new System.Drawing.Point(607, 38);
+            this.lblArnald.Name = "lblArnald";
+            this.lblArnald.Size = new System.Drawing.Size(214, 15);
+            this.lblArnald.TabIndex = 15;
+            // 
+            // lblJoel
+            // 
+            this.lblJoel.BackColor = System.Drawing.Color.White;
+            this.lblJoel.Location = new System.Drawing.Point(607, 16);
+            this.lblJoel.Name = "lblJoel";
+            this.lblJoel.Size = new System.Drawing.Size(214, 15);
+            this.lblJoel.TabIndex = 14;
+            // 
             // lblWinner
             // 
             this.lblWinner.AutoSize = true;
@@ -289,6 +313,7 @@
             this.btnBet.TabIndex = 9;
             this.btnBet.Text = "Place Bet";
             this.btnBet.UseVisualStyleBackColor = false;
+            this.btnBet.Click += new System.EventHandler(this.btnBet_Click);
             // 
             // label5
             // 
@@ -301,30 +326,6 @@
             this.label5.Size = new System.Drawing.Size(427, 49);
             this.label5.TabIndex = 10;
             this.label5.Text = "The Great Frog Race";
-            // 
-            // lblJoel
-            // 
-            this.lblJoel.BackColor = System.Drawing.Color.White;
-            this.lblJoel.Location = new System.Drawing.Point(607, 16);
-            this.lblJoel.Name = "lblJoel";
-            this.lblJoel.Size = new System.Drawing.Size(214, 15);
-            this.lblJoel.TabIndex = 14;
-            // 
-            // lblArnald
-            // 
-            this.lblArnald.BackColor = System.Drawing.Color.White;
-            this.lblArnald.Location = new System.Drawing.Point(607, 38);
-            this.lblArnald.Name = "lblArnald";
-            this.lblArnald.Size = new System.Drawing.Size(214, 15);
-            this.lblArnald.TabIndex = 15;
-            // 
-            // lblJeff
-            // 
-            this.lblJeff.BackColor = System.Drawing.Color.White;
-            this.lblJeff.Location = new System.Drawing.Point(607, 59);
-            this.lblJeff.Name = "lblJeff";
-            this.lblJeff.Size = new System.Drawing.Size(214, 15);
-            this.lblJeff.TabIndex = 16;
             // 
             // Form1
             // 

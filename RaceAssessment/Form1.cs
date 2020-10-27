@@ -76,7 +76,7 @@ namespace RaceAssessment
                 {
                    Application.DoEvents(); //Slows program down enough to allow rnd to be random - seed is millseconds
 
-                    Thread.Sleep(2);
+                  //  Thread.Sleep(2);
 
 
                     frog[i].FrogPB.Left += myrand.Next(10, 15);
@@ -109,14 +109,13 @@ namespace RaceAssessment
                 {
 
                     myPunter[i].Balance += myPunter[i].Bet;
-                    myPunter[i].lblPunter.Text = FrogWinner + " and " + myPunter[i].PunterName + " Won and now has $"
-                        + myPunter[i].Balance;
+                    myPunter[i].lblPunter.Text =  myPunter[i].PunterName + " Won and now has $" + myPunter[i].Balance;
                 }
 
                 else
                 {
                     myPunter[i].Balance -= myPunter[i].Bet;
-                    myPunter[i].lblPunter.Text = " " + myPunter[i].PunterName + " Lost and now has $"
+                   myPunter[i].lblPunter.Text = myPunter[i].PunterName + " Lost and now has $"
                         + myPunter[i].Balance;
                 }
 
@@ -153,10 +152,10 @@ namespace RaceAssessment
                         CurrentPunter = new Joel();
                         break;
                     case "Jeff":
-                        CurrentPunter = new Joel();
+                        CurrentPunter = new Jeff();
                         break;
                     case "Arnald":
-                        CurrentPunter = new Joel();
+                        CurrentPunter = new Arnald();
                         break;
 
                 }
@@ -170,6 +169,12 @@ namespace RaceAssessment
             
             }
 
+        }
+
+        private void btnBet_Click(object sender, EventArgs e)
+        {
+           
+            myPunter[PunterNum].Frog = frog[(int)nudNum.Value].FrogName; 
         }
     }
 }

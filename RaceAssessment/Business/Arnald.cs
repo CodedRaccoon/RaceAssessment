@@ -11,7 +11,7 @@ namespace RaceAssessment.Business
     {
         public Arnald()
         {
-            PunterName = "Jeff";
+            PunterName = "Arnald";
             Frog = "";
             Balance = 20;
             PunterColor = Color.Red;
